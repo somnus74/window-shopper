@@ -28,30 +28,88 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your hourly wage" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVs-g3-HMB" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="143" width="300" height="32"/>
+                                <rect key="frame" x="20" y="143" width="335" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Eu5-oe-Oap"/>
-                                    <constraint firstAttribute="height" constant="32" id="kOI-Am-8R1"/>
+                                    <constraint firstAttribute="height" constant="40" id="kOI-Am-8R1"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Item Price" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6f-t5-b75" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="208" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gPI-oz-uhm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNj-jd-Dbw">
+                                <rect key="frame" x="20" y="299" width="335" height="62.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fn-6g-36U">
+                                <rect key="frame" x="164.5" y="369" width="46" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Ip3-OZ-h7N"/>
+                                    <constraint firstAttribute="height" constant="21" id="yFf-MO-hms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1a-ar-kBT">
+                                <rect key="frame" x="36" y="617" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CqZ-NW-b8d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Clear Claculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Shy-FN-HiY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cVs-g3-HMB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ie-Eh-S78"/>
                             <constraint firstItem="cVs-g3-HMB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xe-lt-NLV"/>
+                            <constraint firstItem="i1a-ar-kBT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="9MT-au-W97"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i1a-ar-kBT" secondAttribute="bottom" constant="20" id="COS-Lf-aHe"/>
+                            <constraint firstItem="yNj-jd-Dbw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H66-tm-LMS"/>
                             <constraint firstItem="2Xw-SN-Srl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J47-TR-Esb"/>
                             <constraint firstItem="2Xw-SN-Srl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LQj-cZ-EnD"/>
+                            <constraint firstItem="7Fn-6g-36U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3s-YP-ihM"/>
+                            <constraint firstItem="i6f-t5-b75" firstAttribute="height" secondItem="cVs-g3-HMB" secondAttribute="height" id="T1y-8y-1bv"/>
                             <constraint firstItem="56G-Vy-Edc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="Wdn-Rp-X44"/>
+                            <constraint firstItem="i6f-t5-b75" firstAttribute="leading" secondItem="cVs-g3-HMB" secondAttribute="leading" id="Wed-OM-Mn1"/>
                             <constraint firstItem="2Xw-SN-Srl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="beD-K1-tbu"/>
+                            <constraint firstItem="yNj-jd-Dbw" firstAttribute="width" secondItem="i6f-t5-b75" secondAttribute="width" id="blC-p0-kON"/>
+                            <constraint firstItem="yNj-jd-Dbw" firstAttribute="top" secondItem="i6f-t5-b75" secondAttribute="bottom" constant="51" id="ghJ-PL-jGg"/>
                             <constraint firstItem="cVs-g3-HMB" firstAttribute="top" secondItem="56G-Vy-Edc" secondAttribute="bottom" constant="40" id="o4G-vX-De7"/>
+                            <constraint firstItem="i6f-t5-b75" firstAttribute="trailing" secondItem="cVs-g3-HMB" secondAttribute="trailing" id="odM-oY-Jen"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cVs-g3-HMB" secondAttribute="trailing" constant="20" id="oiB-pd-t4C"/>
+                            <constraint firstItem="7Fn-6g-36U" firstAttribute="top" secondItem="yNj-jd-Dbw" secondAttribute="bottom" constant="7.5" id="spr-xb-ZxW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i1a-ar-kBT" secondAttribute="trailing" constant="36" id="tv6-wt-CXa"/>
                             <constraint firstItem="2Xw-SN-Srl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vj3-D1-oPs"/>
+                            <constraint firstItem="i6f-t5-b75" firstAttribute="top" secondItem="cVs-g3-HMB" secondAttribute="bottom" constant="25" id="vxB-Af-6YI"/>
+                            <constraint firstItem="cVs-g3-HMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ykL-pl-IGw"/>
                             <constraint firstItem="56G-Vy-Edc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zAI-fr-rsJ"/>
+                            <constraint firstItem="7Fn-6g-36U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zMq-AG-yxx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hoursLbl" destination="7Fn-6g-36U" id="cIT-pn-JQV"/>
+                        <outlet property="priceTxt" destination="i6f-t5-b75" id="vba-NV-k9j"/>
+                        <outlet property="resultLbl" destination="yNj-jd-Dbw" id="ZdD-YH-np1"/>
+                        <outlet property="wageTxt" destination="cVs-g3-HMB" id="VM3-XV-72h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
